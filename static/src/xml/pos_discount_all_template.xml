@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="DiscountALLButton">
+        <div class='control-button js_discountall'>
+            <i class='fa fa-tag'/>
+            Discount
+        </div>
+    </t>
+
+    <t t-name="DiscountPopupWidget">
+        <div role="dialog" class="modal-dialog">
+            <div class="popup popup-discountall">
+                <header class="title"><t t-esc=" widget.options.title || '' " /></header>
+                <input type='text' t-att-value="widget.options.value || ''"></input>
+                <div class="footer">
+                    <div class="button confirm">
+                        Ok
+                    </div>
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>
